@@ -11,7 +11,7 @@
 
 	<mvc:annotation-driven />
 	<!-- Scan classpath for annotations (eg: @Service, @Repository etc) -->
-	<context:component-scan base-package="com.thethirdage" />
+	<context:component-scan base-package="com.thirdageopen" />
 
 	<http auto-config="true" use-expressions="true">
 
@@ -37,7 +37,7 @@
 		<beans:property name="dataSource" ref="myDataSource" />
 		<beans:property name="packagesToScan">
 			<beans:array>
-				<beans:value>com.thethirdage.domain</beans:value>
+				<beans:value>com.thirdageopen.domain</beans:value>
 			</beans:array>
 		</beans:property>
 		<beans:property name="hibernateProperties">

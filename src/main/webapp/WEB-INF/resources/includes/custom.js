@@ -1,0 +1,8 @@
+
+jqueryInit = function() {
+
+	$('.sidebar a').click(function() {
+		$(this).siblings('a').removeClass('active');
+		$(this).addClass('active');
+	});
+};

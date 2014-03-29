@@ -1,0 +1,63 @@
+
+span.list-group {
+	padding-left: 0;
+	margin-bottom: 20px;
+	width: auto;
+	display: inline-block;
+}
+
+span.active {
+	color: #fff;
+	background-color: #428bca;
+}
+
+ul.sidebar {
+	display: inline-block;
+}
+
+.blog-text-area {
+	width: 100%;
+	height: 200px;
+	border-width: 2px;
+	border-style: inset;
+}
+
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.hint-gray {
+	color: grey;
+}
+
+.top-buffer {
+	margin-top: 20px;
+}
+
+.vertical-buffer {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.wide-text {
+	width: 100%;
+}
+
+.right-float {
+	float: right;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+.text-credit {
+	font-size: 8px;
+}
+
+.blog-title {
+	color: cadetblue;
+	font-size: 20px;
+	font-family: fantasy;
+}

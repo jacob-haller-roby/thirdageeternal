@@ -4,16 +4,16 @@
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Third Age: Eternal</a>
+			<a class="navbar-brand" href="#"><img  src="<%=request.getContextPath()%>/resources/images/third_age.png"/></a>
 		</div>
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li>{{#link-to 'game'}} Game {{/link-to}}</li>
-				<li>{{#link-to 'blog'}} Blog {{/link-to}}</li>
-				<li class="disabled"><a href="http://www.kickstarter.com">Purchase</a></li>
+				<li class="navbar-psuedo-button">{{#link-to 'game'}} Game {{/link-to}}</li>
+				<li class="navbar-psuedo-button">{{#link-to 'blog'}} Blog {{/link-to}}</li>
+				<li class="navbar-psuedo-button disabled"><a href="http://www.kickstarter.com">Purchase</a></li>
 			</ul>
-			<ul class="nav navbar-nav pull-right">
+			<div class="pull-right">
 				<security:authorize access="isAuthenticated()">
 					<%-- <li class="btn-group">
 						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -26,23 +26,29 @@
 							<li>{{#link-to 'settings'}} Settings {{/link-to}}</li>
 						</ul>
 					</li> --%>
-					<li><a><security:authentication
-								property="principal.username" /></a></li>
-					<li><a href="<c:url value="j_spring_security_logout" />">Logout</a></li>
+					<a><security:authentication
+								property="principal.username" /></a>
+					<a href="<c:url value="j_spring_security_logout" />">
+					<button type="button" class="btn btn-default navbar-btn">Logout</button>
+					</a>
 				</security:authorize>
 				<security:authorize access="isAnonymous()">
-					<li class="pull-right"><a data-toggle="modal"
-						data-target="#login-modal">Login or Create an Account</a></li>
-					<li class="pull-right"><a data-toggle="modal"
-						data-target="#new-user-modal">Login or Create an Account</a></li>
+					<a data-toggle="modal"
+						data-target="#login-modal">
+					<button type="button" class="btn btn-default navbar-btn">Sign in</button>
+					</a>
+					
+					<a data-toggle="modal"
+						data-target="#new-user-modal">
+						<button type="button" class="btn btn-default navbar-btn">Create Account</button>
+						</a>
 				</security:authorize>
-			</ul>
+			</div>
 
 		</div>
 	</div>
 </nav>
 {{outlet}}
-
 
 
 
@@ -63,3 +69,5 @@
 		</div>
 	</div>
 </div>
+
+

@@ -1,4 +1,81 @@
+/* HEADER SECTION */
 
+.navbar-brand{
+	margin-top: -18px;
+}
+
+.navbar-default{
+	background: rgb(192,192,192);
+	border-color: rgb(134,134,134);	
+}
+
+
+
+.navbar-brand img{
+	height: 50px;
+}
+
+.navbar-psuedo-button{
+	border-left: 1px solid rgb(95,95,95);
+}
+
+/* BODY SECTION */
+
+body{
+	background: rgb(95,95,95)
+}
+
+
+/* ACCORDION STYLING */
+
+div.panel{
+	background: rgb(192,192,192);
+	border-color: rgb(134,134,134);
+}
+
+div.panel-default div.panel-heading{
+	background: rgb(192,192,192);
+	border-color: rgb(134,134,134);
+}
+
+a.list-group-item{
+	background: white;
+	border-color: white;
+}
+
+/* FOOTER STYLING */
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  
+}
+
+#footer p{
+	display:inline;
+}
+
+#footer img{
+	height:60px;
+}
+
+.footer-text{
+	padding: 0 20px;
+	border-right: 1px solid grey;
+}
+
+.footer-info{
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+
+
+
+/* RANDOM */
 span.list-group {
 	padding-left: 0;
 	margin-bottom: 20px;
@@ -61,3 +138,4 @@ ul.sidebar {
 	font-size: 20px;
 	font-family: fantasy;
 }
+

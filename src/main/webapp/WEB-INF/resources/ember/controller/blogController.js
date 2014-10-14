@@ -1,7 +1,8 @@
 App.BlogController = Ember.ObjectController.extend({
 	actions : {
 		developer : function() {
-			this.transitionToRoute("feed", App.Blog.developer());
+			//this.transitionToRoute("feed", App.Blog.developer());
+			this.transitionToRoute("feed");
 		},
 		news : function() {
 			this.transitionToRoute("feed", App.Blog.news());

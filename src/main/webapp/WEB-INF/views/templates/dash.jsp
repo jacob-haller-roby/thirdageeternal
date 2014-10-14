@@ -1,6 +1,11 @@
 
 <%@include file="/WEB-INF/resources/includes/taglib.jspf"%>
+<div>
 
+<img src="<%=request.getContextPath()%>/resources/images/Banner<%=(int)(Math.floor(Math.random() * 2) + 1)%>.jpg" 
+class="fit-to-div top-border"/>
+
+</div>
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
@@ -9,9 +14,9 @@
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="navbar-psuedo-button">{{#link-to 'game'}} Game {{/link-to}}</li>
-				<li class="navbar-psuedo-button">{{#link-to 'blog'}} Blog {{/link-to}}</li>
-				<li class="navbar-psuedo-button disabled"><a href="http://www.kickstarter.com">Purchase</a></li>
+				<li class="navbar-psuedo-button title-font" >{{#link-to 'game'}} Game {{/link-to}}</li>
+				<li class="navbar-psuedo-button title-font">{{#link-to 'blog'}} Blog {{/link-to}}</li>
+				<li class="navbar-psuedo-button disabled title-font"><a href="http://www.kickstarter.com">Purchase</a></li>
 			</ul>
 			<div class="pull-right">
 				<security:authorize access="isAuthenticated()">

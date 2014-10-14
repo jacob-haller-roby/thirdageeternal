@@ -30,9 +30,26 @@
 </head>
 <body>
 
+
   <script type="text/x-handlebars">
+<div id="background">
+<div id="wrap">
 <div class="col-lg-8 col-sm-12 col-md-10 col-centered">
 	{{outlet}}
+</div>
+</div>
+	<div id="push"></div>
+<div  id="footer" >
+  <div class="col-lg-8 col-sm-12 col-md-10 col-centered container">
+  <div class="col-sm-offset-3 col-sm-6 col-centered">
+  <div class="row col-centered">
+    <p class="text-muted footer-text">Copyright 20142</p>
+    <p class="text-muted footer-text">Contact Us</p>
+    <img src="<%=request.getContextPath()%>/resources/images/real_job_logo.png"/>
+    </div>
+   </div>
+  </div>
+</div>	
 </div>
   </script>
 
@@ -57,6 +74,10 @@
 		<jsp:include page="/WEB-INF/views/templates/blog/writeSuccess.jsp"></jsp:include></script>
 		
 		
+		<script type="text/x-handlebars" data-template-name="mad">
+		<jsp:include page="/WEB-INF/views/static/metaphoreanddesign.jsp"></jsp:include></script>
+		
+		
 	<script type="text/x-handlebars" data-template-name="_loginLink">
 		<jsp:include page="/WEB-INF/views/partial/loginLink.jsp"></jsp:include></script>
 		<script type="text/x-handlebars" data-template-name="_post">
@@ -76,17 +97,8 @@
 	<script src="<%=request.getContextPath()%>/resources/ember/objects/blog.js" type="text/javascript"></script>		
 	<script src="<%=request.getContextPath()%>/resources/ember/controller/blogController.js" type="text/javascript"></script>
 	<script src="<%=request.getContextPath()%>/resources/includes/helpers.js" type="text/javascript"></script>
-<div  id="footer">
-  <div class="col-lg-8 col-sm-12 col-md-10 col-centered container">
-  <div class="col-sm-offset-3 col-sm-6 col-centered">
-  <div class="row col-centered">
-    <p class="text-muted footer-text">Copyright 20142</p>
-    <p class="text-muted footer-text">Contact Us</p>
-    <img src="<%=request.getContextPath()%>/resources/images/real_job_logo.png"/>
-    </div>
-   </div>
-  </div>
-</div>	
+	
+	
 
 </body>
 </html>

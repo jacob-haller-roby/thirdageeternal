@@ -8,4 +8,4 @@
 		</security:authorize>
 	</span>
 </div>
-<div class="col-sm-10">{{outlet}}</div>
+<div class="col-sm-10 text-body">{{outlet}}</div>

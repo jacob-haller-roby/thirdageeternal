@@ -16,9 +16,13 @@
 	border-left: 1px solid rgb(95, 95, 95);
 }
 
+
+
 /* BODY SECTION */
 body {
-	background: rgb(95, 95, 95)
+	/* background: #FFFFFF; */
+	background-image: url('../images/seal.jpg');
+	background-attachment: fixed;
 }
 
 /* ACCORDION STYLING */
@@ -117,6 +121,7 @@ ul.sidebar {
 	height: 200px;
 	border-width: 2px;
 	border-style: inset;
+	
 }
 
 .col-centered {
@@ -179,14 +184,28 @@ ul.sidebar {
 .fit-to-div {
 	max-width: 100%;
 	max-height: 100%;
+	height: auto;
 }
 
 .text-body {
 	margin-bottom : 100px;
 	font-family: Calibri;
-	background: #A6742D;
-	border-radius: 4%;
-	border-color: #4B382A;
-	border-style: solid;
+	background-image: URL('../images/skillborder.png');
+	background-size: contain;
+}
 
+div.text-body p {
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+div.text-body h2 {
+	margin-right: 50px;
+	margin-left: 150px;
+	margin-top: 50px;
+}
+
+.transparent {
+	opacity : 0;
 }

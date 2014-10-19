@@ -1,5 +1,5 @@
 <%@include file="/WEB-INF/resources/includes/taglib.jspf"%>
-<div class="container">
+
 	<div class="row">
 		<div class="col-sm-2">
 			<div class="panel panel-default">
@@ -48,4 +48,3 @@
 		</div>
 		<div class="col-sm-10">{{outlet}}</div>
 	</div>
-</div>

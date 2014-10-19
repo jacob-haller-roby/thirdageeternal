@@ -1,5 +1,5 @@
 <div >
-	<h3>Mechanics as a Literary Device</h3>
+	<h2>Mechanics as a Literary Device</h2>
 	<h4>
 		<p>Board and card games are narrative devices. Proceeding from
 			point to point games unfold along a linear timeline, beginning to
@@ -34,7 +34,7 @@
 			teamwork over competition. Player experience is subsequently shaped
 			through mechanics.</p>
 	</h4>
-	<h3>Systems and "the Feel"</h3>
+	<h2>Systems and "the Feel"</h2>
 	<h4>
 		<p>Game design is about crafting an experience. Mechanics and art
 			work together to give a game it's "feel". All design choices must be
@@ -54,7 +54,7 @@
 			as simulated systems designed to elicit emotional responses through
 			play experience.</p>
 	</h4>
-	<h3>Physical Games and Interpretation</h3>
+	<h2>Physical Games and Interpretation</h2>
 	<h4>
 		<p>The use of systems in physical games differs widely from their
 			usage in video games. In both, systems act as metaphor simulating

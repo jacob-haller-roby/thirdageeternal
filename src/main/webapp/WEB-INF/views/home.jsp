@@ -77,6 +77,8 @@
 		<script type="text/x-handlebars" data-template-name="mad">
 		<jsp:include page="/WEB-INF/views/static/metaphoreanddesign.jsp"></jsp:include></script>
 		
+		<script type="text/x-handlebars" data-template-name="map">
+		<jsp:include page="/WEB-INF/views/static/map.jsp"></jsp:include></script>
 		
 	<script type="text/x-handlebars" data-template-name="_loginLink">
 		<jsp:include page="/WEB-INF/views/partial/loginLink.jsp"></jsp:include></script>
@@ -94,9 +96,11 @@
 	<script src="<%=request.getContextPath()%>/resources/ember/bootstrap/Map.js" type="text/javascript"></script>
 	<script src="<%=request.getContextPath()%>/resources/ember/route/indexRoute.js" type="text/javascript"></script>
 	<script src="<%=request.getContextPath()%>/resources/ember/route/blogRoute.js" type="text/javascript"></script>
+	<script src="<%=request.getContextPath()%>/resources/ember/route/gameRoute.js" type="text/javascript"></script>
 	<script src="<%=request.getContextPath()%>/resources/ember/objects/blog.js" type="text/javascript"></script>		
 	<script src="<%=request.getContextPath()%>/resources/ember/controller/blogController.js" type="text/javascript"></script>
 	<script src="<%=request.getContextPath()%>/resources/includes/helpers.js" type="text/javascript"></script>
+	<script src="resources/includes/dynamicmap.js" type="text/javascript"></script>
 	
 	
 

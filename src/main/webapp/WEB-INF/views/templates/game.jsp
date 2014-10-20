@@ -2,7 +2,7 @@
 
 	<div class="row">
 		<div class="col-sm-2">
-			<div class="panel panel-default">
+			<!-- <div class="panel panel-default">
 				<div class="panel-heading" data-toggle="collapse"
 					data-parents="#accordion" data-target="#collapseOne">
 					<h4 class="panel-title">
@@ -13,7 +13,7 @@
 					class="panel-collapse collapse in btn-group-vertical">
 					{{#link-to 'cardlist' class="list-group-item"}}Cards{{/link-to}}
 					{{#link-to 'search' class="list-group-item"}}Search{{/link-to}}</div>
-			</div>
+			</div> -->
 			<div class="panel panel-default">
 				<div class="panel-heading" data-toggle="collapse"
 					data-parents="#accordion" data-target="#collapseTwo">
@@ -23,8 +23,8 @@
 				</div>
 				<div id="collapseTwo"
 					class="panel-collapse collapse in btn-group-vertical">
-					{{#link-to 'background'
-					class="list-group-item"}}Background{{/link-to}} {{#link-to
+					<!-- {{#link-to 'background'
+					class="list-group-item"}}Background{{/link-to}} --> {{#link-to
 					'factions' class="list-group-item"}}Factions{{/link-to}}</div>
 			</div>
 			<div class="panel panel-default">

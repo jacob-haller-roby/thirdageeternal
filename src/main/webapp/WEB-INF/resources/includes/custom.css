@@ -16,8 +16,6 @@
 	border-left: 1px solid rgb(95, 95, 95);
 }
 
-
-
 /* BODY SECTION */
 body {
 	/* background: #FFFFFF; */
@@ -59,7 +57,7 @@ a.list-group-item {
 	height: 100%;
 	/* Negative indent footer by it's height */
 	margin: 0 auto 600px;
-	margin-bottom: 600px;  
+	margin-bottom: 600px;
 }
 
 @media ( max-width : 767px) {
@@ -80,7 +78,6 @@ html {
 	Margin bottom by footer height
 	margin-bottom: 200px;
 } */
-
 #footer p {
 	display: inline;
 }
@@ -121,7 +118,6 @@ ul.sidebar {
 	height: 200px;
 	border-width: 2px;
 	border-style: inset;
-	
 }
 
 .col-centered {
@@ -188,10 +184,29 @@ ul.sidebar {
 }
 
 .text-body {
-	margin-bottom : 100px;
+	margin-bottom: 100px;
 	font-family: Calibri;
 	background-image: URL('../images/skillborder.png');
 	background-size: contain;
+}
+
+.text-body-header {
+	margin-top: 10px;
+	font-family: Calibri;
+	background-image: URL('../images/topBorder.png');
+}
+
+.text-body-middle {
+	font-family: Calibri;
+	background-image: URL('../images/middleBorder.png');
+	background-size: contain;
+}
+
+.text-body-footer {
+	font-family: Calibri;
+	background-image: URL('../images/bottomBorder.png');
+	background-size: contain;
+	margin-bottom: 100px;
 }
 
 div.text-body p {
@@ -207,5 +222,35 @@ div.text-body h2 {
 }
 
 .transparent {
-	opacity : 0;
+	opacity: 0;
+}
+
+
+
+.multiple-image-bg {
+	background-image: url(../images/topBorder.png), url(../images/bottomBorder.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position: left 0px top -12px, left 0px bottom -12px;
+	background-size: contain;
+	position: relative;
+}
+
+
+.multiple-image-bg:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    right: 0;
+    bottom: 5%;
+    left: 0;
+     background: url(../images/middleBorder.png) top left repeat-y;
+     background-size: contain;
+}
+
+.text-margin {
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-right: 20%;
+	padding-left: 20%;
 }

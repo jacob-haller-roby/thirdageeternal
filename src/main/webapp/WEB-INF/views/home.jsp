@@ -79,6 +79,8 @@
 		
 		<script type="text/x-handlebars" data-template-name="map">
 		<jsp:include page="/WEB-INF/views/static/map.jsp"></jsp:include></script>
+		<script type="text/x-handlebars" data-template-name="factions/aristocracy">
+		<jsp:include page="/WEB-INF/views/static/aristocracy.jsp"></jsp:include></script>
 		
 	<script type="text/x-handlebars" data-template-name="_loginLink">
 		<jsp:include page="/WEB-INF/views/partial/loginLink.jsp"></jsp:include></script>

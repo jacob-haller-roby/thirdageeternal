@@ -10,3 +10,13 @@ App.FactionsRoute = Ember.Route.extend({
 		this.render('map');
 	}
 });
+
+App.MapView = Ember.View.extend({
+	didInsertElement: function(){
+		mapSetup();
+	}
+});
+
+App.AristocracyRoute = Ember.Route.extend({
+	
+});

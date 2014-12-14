@@ -77,6 +77,10 @@
 		<script type="text/x-handlebars" data-template-name="mad">
 		<jsp:include page="/WEB-INF/views/static/metaphoreanddesign.jsp"></jsp:include></script>
 		
+		<script type="text/x-handlebars" data-template-name="rol">
+		<jsp:include page="/WEB-INF/views/static/RolesOfLanguage.jsp"></jsp:include></script>
+		
+		
 		<script type="text/x-handlebars" data-template-name="map">
 		<jsp:include page="/WEB-INF/views/static/map.jsp"></jsp:include></script>
 		<script type="text/x-handlebars" data-template-name="factions/aristocracy">

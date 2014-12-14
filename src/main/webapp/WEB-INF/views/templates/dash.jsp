@@ -14,10 +14,11 @@ class="fit-to-div top-border"/>
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="navbar-psuedo-button title-font" >{{#link-to 'game'}} Game {{/link-to}}</li>
-				<li class="navbar-psuedo-button title-font">{{#link-to 'blog'}} Blog {{/link-to}}</li>
-				<li class="navbar-psuedo-button disabled title-font"><a href="http://www.kickstarter.com">Purchase</a></li>
+				<li class="navbar-psuedo-button title-font" >{{#link-to 'game'}} Game Information {{/link-to}}</li>
+				<li class="navbar-psuedo-button title-font">{{#link-to 'blog'}} Developer Blog {{/link-to}}</li>
+				<li class="navbar-psuedo-button title-font"><a href="http://www.kickstarter.com">Purchase</a></li>
 			</ul>
+			<%--
 			<div class="pull-right">
 				<security:authorize access="isAuthenticated()">
 					<%-- <li class="btn-group">
@@ -30,7 +31,7 @@ class="fit-to-div top-border"/>
 							<li>{{#link-to 'decks'}} Decks {{/link-to}}</li>
 							<li>{{#link-to 'settings'}} Settings {{/link-to}}</li>
 						</ul>
-					</li> --%>
+					</li> 
 					<a><security:authentication
 								property="principal.username" /></a>
 					<a href="<c:url value="j_spring_security_logout" />">
@@ -49,6 +50,7 @@ class="fit-to-div top-border"/>
 						</a>
 				</security:authorize>
 			</div>
+			 --%>
 
 		</div>
 	</div>

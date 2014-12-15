@@ -9,13 +9,13 @@ class="fit-to-div top-border"/>
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#"><img  src="<%=request.getContextPath()%>/resources/images/third_age.png"/></a>
+			<a class="navbar-brand vertical-allign" href="#"><img  src="<%=request.getContextPath()%>/resources/images/logo1lr.png"/></a>
 		</div>
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="navbar-psuedo-button title-font" >{{#link-to 'game'}} Game Information {{/link-to}}</li>
-				<li class="navbar-psuedo-button title-font">{{#link-to 'blog'}} Developer Blog {{/link-to}}</li>
+				<li class="navbar-psuedo-button title-font" >{{#link-to 'factions'}} Game Information {{/link-to}}</li>
+				<li class="navbar-psuedo-button title-font">{{#link-to 'blog.emotion'}} Developer Blog {{/link-to}}</li>
 				<li class="navbar-psuedo-button title-font"><a href="http://www.kickstarter.com">Purchase</a></li>
 			</ul>
 			<%--

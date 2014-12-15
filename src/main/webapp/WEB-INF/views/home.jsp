@@ -23,92 +23,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="styleSheet" type="text/css" href="<%=request.getContextPath()%>/resources/includes/bootstrap.css">
-<link rel="styleSheet" type="text/css" href="<%=request.getContextPath()%>/resources/includes/custom.css">
+<link rel="styleSheet" type="text/css"
+	href="<%=request.getContextPath()%>/resources/includes/bootstrap.css">
+<link rel="styleSheet" type="text/css"
+	href="<%=request.getContextPath()%>/resources/includes/custom.css">
 <meta charset="utf-8">
 <title>The Third Age</title>
 </head>
 <body>
 
 
-  <script type="text/x-handlebars">
-<div id="background">
-<div id="wrap">
+	<script type="text/x-handlebars">
+
+<div id="test">
+<div class="row">
 <div class="col-lg-8 col-sm-12 col-md-10 col-centered">
 	{{outlet}}
 </div>
 </div>
 	<div id="push"></div>
-<div  id="footer" >
+<div  id="footer" class="row" >
   <div class="col-lg-8 col-sm-12 col-md-10 col-centered container">
   <div class="col-sm-offset-3 col-sm-6 col-centered">
   <div class="row col-centered">
-    <p class="text-muted footer-text">Copyright 20142</p>
+    <p class="text-muted footer-text">Copyright 2014</p>
     <p class="text-muted footer-text">Contact Us</p>
     <img src="<%=request.getContextPath()%>/resources/images/real_job_logo.png"/>
     </div>
    </div>
   </div>
-</div>	
+</div>
 </div>
   </script>
 
-  
-  <script type="text/x-handlebars" data-template-name="dash">
+
+	<script type="text/x-handlebars" data-template-name="dash">
 		<jsp:include page="/WEB-INF/views/templates/dash.jsp"></jsp:include></script>
-		 <script type="text/x-handlebars" data-template-name="community">
+	<script type="text/x-handlebars" data-template-name="community">
 		<jsp:include page="/WEB-INF/views/templates/community.jsp"></jsp:include></script>
-		<script type="text/x-handlebars" data-template-name="blog">
+	<script type="text/x-handlebars" data-template-name="blog">
 		<jsp:include page="/WEB-INF/views/templates/blog.jsp"></jsp:include></script>
-		<script type="text/x-handlebars" data-template-name="game">
+	<script type="text/x-handlebars" data-template-name="game">
 		<jsp:include page="/WEB-INF/views/templates/game.jsp"></jsp:include></script>
-		
-		
-		<script type="text/x-handlebars" data-template-name="feed">
+
+
+	<script type="text/x-handlebars" data-template-name="feed">
 		<jsp:include page="/WEB-INF/views/templates/blog/feed.jsp"></jsp:include></script>
-		<script type="text/x-handlebars" data-template-name="article">
+	<script type="text/x-handlebars" data-template-name="article">
 		<jsp:include page="/WEB-INF/views/templates/blog/article.jsp"></jsp:include></script>
-		<script type="text/x-handlebars" data-template-name="write">
+	<script type="text/x-handlebars" data-template-name="write">
 		<jsp:include page="/WEB-INF/views/templates/blog/write.jsp"></jsp:include></script>
-		<script type="text/x-handlebars" data-template-name="blog_submit">
+	<script type="text/x-handlebars" data-template-name="blog_submit">
 		<jsp:include page="/WEB-INF/views/templates/blog/writeSuccess.jsp"></jsp:include></script>
-		
-		
-		<script type="text/x-handlebars" data-template-name="mad">
+
+
+	<script type="text/x-handlebars" data-template-name="mad">
 		<jsp:include page="/WEB-INF/views/static/metaphoreanddesign.jsp"></jsp:include></script>
-		
-		<script type="text/x-handlebars" data-template-name="rol">
-		<jsp:include page="/WEB-INF/views/static/RolesOfLanguage.jsp"></jsp:include></script>
-		
-		
-		<script type="text/x-handlebars" data-template-name="map">
+
+	<script type="text/x-handlebars" data-template-name="emotion">
+		<jsp:include page="/WEB-INF/views/static/Emotion.jsp"></jsp:include></script>
+
+
+	<script type="text/x-handlebars" data-template-name="map">
 		<jsp:include page="/WEB-INF/views/static/map.jsp"></jsp:include></script>
-		<script type="text/x-handlebars" data-template-name="factions/aristocracy">
+	<script type="text/x-handlebars"
+		data-template-name="factions/aristocracy">
 		<jsp:include page="/WEB-INF/views/static/aristocracy.jsp"></jsp:include></script>
+
+
+	<%--ARTICLES --%>
+	<script type="text/x-handlebars" data-template-name="blog/emotion">
+		<jsp:include page="/WEB-INF/views/static/Emotion.jsp"></jsp:include></script>
+	<script type="text/x-handlebars" data-template-name="blog/interplay">
+		<jsp:include page="/WEB-INF/views/static/Interplay.jsp"></jsp:include></script>
+	<script type="text/x-handlebars" data-template-name="about">
+		<jsp:include page="/WEB-INF/views/static/about.jsp"></jsp:include></script>
+	<script type="text/x-handlebars" data-template-name="blog/nathan">
+		<jsp:include page="/WEB-INF/views/static/Nathan.jsp"></jsp:include></script>
+	<script type="text/x-handlebars" data-template-name="blog/matt">
+		<jsp:include page="/WEB-INF/views/static/Matt.jsp"></jsp:include></script>
+	<script type="text/x-handlebars" data-template-name="blog/sam">
+		<jsp:include page="/WEB-INF/views/static/Sam.jsp"></jsp:include></script>		
+
+	<script type="text/x-handlebars" data-template-name="howtoplay/cardtypes">
+		<jsp:include page="/WEB-INF/views/static/cardtypes.jsp"></jsp:include></script>			
+	<script type="text/x-handlebars" data-template-name="howtoplay/gameplay">
+		<jsp:include page="/WEB-INF/views/static/gameplay.jsp"></jsp:include></script>		
 		
 	<script type="text/x-handlebars" data-template-name="_loginLink">
 		<jsp:include page="/WEB-INF/views/partial/loginLink.jsp"></jsp:include></script>
-		<script type="text/x-handlebars" data-template-name="_post">
-		<jsp:include page="/WEB-INF/views/partial/post.jsp"></jsp:include></script>		
-		
-  <script src="<%=request.getContextPath()%>/resources/includes/jquery-1.10.2.js" type="text/javascript"></script>
-  <script src="<%=request.getContextPath()%>/resources/includes/handlebars-1.1.2.js" type="text/javascript"></script>
-  <script src="<%=request.getContextPath()%>/resources/includes/ember.js" type="text/javascript"></script>
-  <script src="<%=request.getContextPath()%>/resources/includes/bootstrap.js" type="text/javascript"></script>
-  <script src="<%=request.getContextPath()%>/resources/includes/custom.js" type="text/javascript"></script>
-  
-  	<script src="<%=request.getContextPath()%>/resources/ember/bootstrap/App.js" type="text/javascript"></script>
-  	<script src="<%=request.getContextPath()%>/resources/ember/bootstrap/CustomEmber.js" type="text/javascript"></script>
-	<script src="<%=request.getContextPath()%>/resources/ember/bootstrap/Map.js" type="text/javascript"></script>
-	<script src="<%=request.getContextPath()%>/resources/ember/route/indexRoute.js" type="text/javascript"></script>
-	<script src="<%=request.getContextPath()%>/resources/ember/route/blogRoute.js" type="text/javascript"></script>
-	<script src="<%=request.getContextPath()%>/resources/ember/route/gameRoute.js" type="text/javascript"></script>
-	<script src="<%=request.getContextPath()%>/resources/ember/objects/blog.js" type="text/javascript"></script>		
-	<script src="<%=request.getContextPath()%>/resources/ember/controller/blogController.js" type="text/javascript"></script>
-	<script src="<%=request.getContextPath()%>/resources/includes/helpers.js" type="text/javascript"></script>
+	<script type="text/x-handlebars" data-template-name="_post">
+		<jsp:include page="/WEB-INF/views/partial/post.jsp"></jsp:include></script>
+
+	<script
+		src="<%=request.getContextPath()%>/resources/includes/jquery-1.10.2.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/includes/handlebars-1.1.2.js"
+		type="text/javascript"></script>
+	<script src="<%=request.getContextPath()%>/resources/includes/ember.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/includes/bootstrap.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/includes/custom.js"
+		type="text/javascript"></script>
+
+	<script
+		src="<%=request.getContextPath()%>/resources/ember/bootstrap/App.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/ember/bootstrap/CustomEmber.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/ember/bootstrap/Map.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/ember/route/indexRoute.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/ember/route/blogRoute.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/ember/route/gameRoute.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/ember/objects/blog.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/ember/controller/blogController.js"
+		type="text/javascript"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/includes/helpers.js"
+		type="text/javascript"></script>
 	<script src="resources/includes/dynamicmap.js" type="text/javascript"></script>
-	
-	
+
+
 
 </body>
 </html>

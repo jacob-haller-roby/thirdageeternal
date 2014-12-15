@@ -1,22 +1,64 @@
 App.GameRoute = Ember.Route.extend({
-  renderTemplate: function(){
-	  this.render('game');
-  }
+	renderTemplate : function() {
+		this.render('game');
+	}
 });
-//NOT INCLUDED:  MAGIC!
+// NOT INCLUDED: MAGIC!
 
 App.FactionsRoute = Ember.Route.extend({
-	renderTemplate: function(){
+	renderTemplate : function() {
 		this.render('map');
 	}
 });
 
 App.MapView = Ember.View.extend({
-	didInsertElement: function(){
+	didInsertElement : function() {
 		mapSetup();
 	}
 });
 
-App.AristocracyRoute = Ember.Route.extend({
-	
+
+App.FactionsAristocracyRoute = Ember.Route.extend({
+	actions : {
+		didTransition : function() {
+			scrollToElement("#factiondesc", 900);
+			return true; // Bubble the didTransition event
+		}
+	}
+});
+
+App.FactionsBreakerRoute = Ember.Route.extend({
+	actions : {
+		didTransition : function() {
+			scrollToElement("#factiondesc", 900);
+			return true; // Bubble the didTransition event
+		}
+	}
+});
+
+App.FactionsDenizenRoute = Ember.Route.extend({
+	actions : {
+		didTransition : function() {
+			scrollToElement("#factiondesc", 900);
+			return true; // Bubble the didTransition event
+		}
+	}
+});
+
+App.FactionsMysticRoute = Ember.Route.extend({
+	actions : {
+		didTransition : function() {
+			scrollToElement("#factiondesc", 900);
+			return true; // Bubble the didTransition event
+		}
+	}
+});
+
+App.FactionsSummonerRoute = Ember.Route.extend({
+	actions : {
+		didTransition : function() {
+			scrollToElement("#factiondesc", 900);
+			return true; // Bubble the didTransition event
+		}
+	}
 });

@@ -4,7 +4,7 @@
 }
 
 .navbar-default {
-	background: rgb(192, 192, 192);
+	background: #D6D1D5;
 	border-color: rgb(134, 134, 134);
 }
 
@@ -21,6 +21,11 @@ body {
 	/* background: #FFFFFF; */
 	background-image: url('../images/seal.jpg');
 	background-attachment: fixed;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* ACCORDION STYLING */
@@ -235,14 +240,22 @@ div.text-body h2 {
 	position: relative;
 }
 
+.text-margin p {
+	font-family: Calibri;
+	font-size: medium;
+}
+
+.text-margin h1, h2, h3 {
+	font-family: Lithos Pro;
+}
 
 .multiple-image-bg:before {
     content: '';
     position: absolute;
     z-index: -1;
-    top: 5%;
+    top: 10%;
     right: 0;
-    bottom: 5%;
+    bottom: 10%;
     left: 0;
      background: url(../images/middleB.png) top left repeat-y;
      background-size: contain;
@@ -253,4 +266,33 @@ div.text-body h2 {
 	padding-bottom: 10%;
 	padding-right: 20%;
 	padding-left: 20%;
+}
+
+.blog-background {
+	
+    background-color: #D7D7D7;
+    border-radius: 30px;
+    border-style: inset;
+    border-width: thick;
+    padding: 5%;
+    padding-top: 2%;
+    
+	
+}
+
+.blog-background p {
+	font-family: Calibri;
+	font-size: medium;
+}
+
+.blog-background h1, h2, h3 {
+	font-family: Lithos Pro;
+}
+
+.panel-collapse a {
+	font-family: Calibri;
+}
+
+.panel-title {
+	font-family: Lithos Pro;
 }

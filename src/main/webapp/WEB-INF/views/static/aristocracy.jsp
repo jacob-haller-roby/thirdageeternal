@@ -21,8 +21,7 @@
 </div> -->
 
 
-<div class="multiple-image-bg">
-	<div class="text-margin">
+
 	<h2>Mechanics as a Literary Device</h2>
 		<p>Board and card games are narrative devices. Proceeding from
 			point to point games unfold along a linear timeline, beginning to
@@ -118,6 +117,3 @@
 			created by the metaphor. Through individual interpretation of
 			abstract gaming systems players become uniquely bonded with a play
 			experience. This is one strength of the physical game.</p>
-</div>
-
-</div>

@@ -61,5 +61,5 @@
 	</map>
 
 </div>
-
-{{outlet}}
+<div id="factiondesc" class="blog-background top-buffer">
+{{outlet}}</div>

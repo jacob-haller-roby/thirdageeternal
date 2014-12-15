@@ -1,6 +1,14 @@
 App.Router.map(function() {
 	this.resource("index", {path: "/"}, function(){
 		this.resource("blog", {path: "/blog"}, function(){
+			this.route("emotion");
+			this.route("interplay");
+			this.route("nathan");
+			this.route("matt");
+			this.route("sam");
+			this.resource("about", {path: "/about"}, function(){
+				
+			});
 			this.resource("feed", {path: "/feed/:url"}, function(){
 				
 			});
@@ -31,7 +39,9 @@ App.Router.map(function() {
 				this.route("mystic");
 				this.route("summoner");
 			});
-			this.resource("howtoplay", function(){
+			this.resource("howtoplay", {path: "/howtoplay"}, function(){
+				this.route("cardtypes");
+				this.route("gameplay");
 				
 			});
 			this.resource("basicrules", function(){
